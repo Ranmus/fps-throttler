@@ -37,7 +37,7 @@ class Throttler {
         this.callback();
       }
 
-      this.requestId = window.requestAnimationFrame(loop);
+      this.requestId = requestAnimationFrame(loop);
     };
 
     loop();
@@ -77,11 +77,11 @@ class Throttler {
   }
   /**
    * Shorthand function to set fps limit
-   * @param {number} fps
+   * @param {number} limit
    * @param {Throttler}
    */
-  limit(fps) {
-    return this.setFPSLimit(fps);
+  fps(limit) {
+    return this.setFPSLimit(limit);
   }
   /**
    * Shorthand function to set callback

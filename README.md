@@ -1,17 +1,30 @@
 # FPS Throttler
 Throttle calling function to fps limit (by using requestAnimationFrame).
 
+Example:
+```javascript
+const throttler = new Throttler(() => {}, 10);
+```
+Will call function 10 times per second (according to requestAnimationFrame 60 fps limit).
 ## Usage
 
-Creating new throttler:
+Create new throttler:
 ```javascript
 const throttler = new Throttler(callback, fpsLimit);
 ```
-Starting:
-```
+Start:
+```javascript
 throttler.start();
 ```
-Stopping:
-```
+Stop:
+```javascript
 throttler.stop();
+```
+Change fps limit
+```javascript
+throttler.limit(fps);
+```
+Change callback
+```javascript
+throttler.callback(callable);
 ```
