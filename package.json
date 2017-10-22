@@ -1,0 +1,27 @@
+{
+  "name": "fps-throttler",
+  "version": "1.0.0",
+  "description": "Throttle calling function to specified fps limit",
+  "main": "src/throttler.js",
+  "scripts": {
+    "test": "./node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ranmus/fps-throttler.git"
+  },
+  "keywords": [
+    "Throttle",
+    "callback",
+    "fps"
+  ],
+  "author": "Lukasz Strzyzowski",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/Ranmus/fps-throttler/issues"
+  },
+  "homepage": "https://github.com/Ranmus/fps-throttler#readme",
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
+}
