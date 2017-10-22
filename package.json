@@ -1,6 +1,6 @@
 {
   "name": "fps-throttler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Throttle calling function to specified fps limit",
   "main": "src/throttler.js",
   "scripts": {

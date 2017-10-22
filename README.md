@@ -3,14 +3,20 @@ Throttle calling function to fps limit (by using requestAnimationFrame).
 
 Example:
 ```javascript
+const Throttler = require('fps-throttler');
 const throttler = new Throttler(() => {}, 10);
 ```
-Will call function 10 times per second (according to requestAnimationFrame 60 fps limit).
+This will call function 10 times per second (according to requestAnimationFrame 60 fps limit).
 ## Usage
 
 Create new throttler:
 ```javascript
+const Throttler = require('fps-throttler');
 const throttler = new Throttler(callback, fpsLimit);
+```
+For ecmascript module use:
+```javascript
+import Throttler from './node_modules/src/fps-throttler/throttler.ems.js';
 ```
 Start:
 ```javascript
