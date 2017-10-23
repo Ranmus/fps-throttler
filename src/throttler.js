@@ -96,4 +96,8 @@ class Throttler {
 /**
  * Export class
  */
-module.exports = Throttler;
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+  module.exports = Throttler;
+} else {
+  window.Throttler = Throttler;
+}
